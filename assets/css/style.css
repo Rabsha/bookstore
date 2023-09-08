@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+:root{
+    --primarycolor: #F4780F;
+    --secondarycolor: #707070;
+    --normalcolor: #7C75A7;
+    --whitecolor: #FFFFFF;
+    --blackcolor: #000000;
+}
+*{
+    margin:0;
+    padding:0;
+}
+h1,h2,h3,h4,h5,h6,p,ul{
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+.container {
+    max-width: 1500px;
+}
+.topBlackBar{
+    background: #000;
+}
+.texttopOrder h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    padding: 5px 0;
+    font-weight: 600;
+}
+.difftext{
+    color:var(--primarycolor);
+    font-weight: bold;
+}
+.ordertext{
+    font-weight: 400;
+}
+.mainthreemenus {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    align-content: center;
+    flex-direction: row;
+}
+.main-menus {
+    padding: 25px 0;
+}
+.topmenus {
+    width: 50%;
+}
+.topmenus li {
+    float: left;
+}
+.topmenus li a {
+    padding-left: 18px;
+    padding-right: 18px;
+    color: var(--secondarycolor);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.topmenus li a:hover {
+    color: var(--primarycolor);
+}
+.mycallbtn {
+    color: var(--primarycolor);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    padding-right: 24px;
+    font-weight: 600;
+}
+.mycallbtn i {
+    padding-right: 8px;
+    font-size: 20px;
+}
+.mybtnlivechat {
+    text-decoration: none;
+    background: var(--primarycolor);
+    color: #fff !important;
+    font-weight: 500 !important;
+    padding: 10px 18px;
+    display: inline-block;
+    box-shadow: 0px 5px 6px #ccc;
+}
+.menutwo{
+    background-color: #7C75A7;
+    padding: 20px 0px;
+}
+.widemenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+}
+.widemenu li {
+    float: left;
+    text-transform: uppercase;
+}
+.widemenu li a{
+    color:var(--blackcolor);
+    text-decoration: none;
+}
+.widemenu li a:hover{
+    color:var(--whitecolor);
+}
