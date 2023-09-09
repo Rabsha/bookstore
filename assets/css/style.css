@@ -8,6 +8,9 @@ body{
     --normalcolor: #7C75A7;
     --whitecolor: #FFFFFF;
     --blackcolor: #000000;
+    --textcolor: #50A7A1;
+    --paracolor: #858585;
+
 }
 *{
     margin:0;
@@ -19,8 +22,11 @@ h1,h2,h3,h4,h5,h6,p,ul{
     list-style: none;
 }
 .container {
-    max-width: 1500px;
+    max-width: 1400px;
 }
+
+/*Header Start*/
+/*Header Start*/
 .topBlackBar{
     background: #000;
 }
@@ -87,25 +93,227 @@ h1,h2,h3,h4,h5,h6,p,ul{
     display: inline-block;
     box-shadow: 0px 5px 6px #ccc;
 }
-.menutwo{
+.menutwo {
     background-color: #7C75A7;
-    padding: 20px 0px;
+    padding: 23px 0px;
 }
 .widemenu {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: center;
 }
 .widemenu li {
     float: left;
     text-transform: uppercase;
 }
-.widemenu li a{
-    color:var(--blackcolor);
+.widemenu li a {
+    color: var(--blackcolor);
     text-decoration: none;
+    padding: 0 33px;
+    font-weight: 700;
 }
 .widemenu li a:hover{
     color:var(--whitecolor);
+}
+/*Header End*/
+/*Header End*/
+
+/*Content Start*/
+/*Content Start*/
+.banner {
+    background: url(../../assets/images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 640px;
+}
+.bannerdetails {
+    width: 45%;
+    padding-top: 70px;
+    float: left;
+}
+.imgbook {
+    width: 55%;
+    float: right;
+}
+.imgbook img{
+    width: 100%;
+}
+.bannerheading h1 {
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+.bannerheading p {
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+.bannerform {
+    background: #D4D4D4;
+    padding: 18px 20px;
+    margin-bottom: 20px;
+}
+.topbarform input {
+    width: 100%;
+    padding: 12px 18px;
+    font-size: 14px;
+    border: #fff;
+}
+.form-group {
+    margin-bottom: 12px;
+}
+.form-group:last-child {
+    margin-bottom: 0;
+}
+.form-group button {
+    width: 100%;
+    border: none;
+    padding: 11px 0;
+    background-color: #F4780F;
+    font-weight: 700;
+    color: #fff;
+    font-size: 15px;
+}
+.bannerclients img {
+    width: 100%;
+}
+.btn-promotion {
+    background: #50A7A1;
+    padding: 10px 50px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+.btncall {
+    background: #C0272D;
+    color: #fff;
+    padding: 8px 14px;
+    display: inline-block;
+}
+.promotionicons {
+    position: fixed;
+    right: -201px;
+    top: 70%;
+}
+.promotionicons a {
+    color: #fff;
+}
+.promotionicons a:hover {
+    color: #fff;
+}
+.btncomments{
+    background: var(--primarycolor);
+    color: #fff;
+    padding: 8px 12px;
+    display: inline-block;
+}
+.rotatenow {
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+    margin-bottom: -30px;
+}
+.services{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.serviceheading {
+    text-align: center;
+    padding-bottom: 55px;
+}
+.serviceheading h1 {
+    font-size: 46px;
+    padding-bottom: 12px;
+    color:var(--textcolor);
+    text-transform: uppercase;
+}
+.serviceheading p {
+    width: 70%;
+    margin: 0 auto;
+    color: var(--paracolor);
+    font-size: 14px;
+}
+.serviceimgbook img{
+    width: 100%;
+}
+.firstservice.clearfix {
+    padding-bottom: 80px;
+}
+.firstservice:last-child{
+    padding-bottom: 60px;
+}
+.serviceprompt {
+    border: 1px solid var(--textcolor);
+    padding: 25px 50px;
+}
+.serviceprompt h1 {
+    font-size: 18px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.serviceprompt p {
+    font-size: 12px;
+    padding-bottom: 30px;
+}
+.serviceprompt p {
+    font-size: 12px;
+    padding-bottom: 22px;
+}
+.serviceprompt a {
+    text-decoration: none;
+    padding: 8px 45px;
+    display: inline-block;
+    font-size: 12px;
+    color: #ffff;
+}
+.themecolorbtn{
+    background-color: var(--textcolor);
+}
+.blackcolorbtn{
+    background-color: var(--blackcolor);
+}
+.counticonservice {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 13px;
+    align-content: center;
+}
+.bookiconbg {
+    background: var(--textcolor);
+    padding: 18px 18px;
+    border-radius: 100px;
+}
+.serviceimgbook {
+    width: 872px;
+    float: left;
+}
+.serviceprompt {
+    border: 1px solid var(--textcolor);
+    padding: 25px 50px;
+    width: 50%;
+    float: right;
+    margin-top: -335px;
+    background: #fff;
+}
+.rightthere {
+    float: right;
+}
+.leftthere {
+    float: left;
+}
+.btn-showall {
+    text-align: center;
+    background-color: var(--textcolor);
+    width: 30%;
+    margin: 0 auto;
+}
+.btn-showall a {
+    padding: 6px 10px;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
 }
