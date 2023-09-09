@@ -10,7 +10,7 @@ body{
     --blackcolor: #000000;
     --textcolor: #50A7A1;
     --paracolor: #858585;
-
+    --sectionbg: #ECECEC;
 }
 *{
     margin:0;
@@ -316,4 +316,100 @@ h1,h2,h3,h4,h5,h6,p,ul{
     display: inline-block;
     color: #fff;
     text-decoration: none;
+}
+.bookwriter{
+    background-color: var(--sectionbg);
+}
+.leftsidebook h1 {
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.thmecolor{
+    color: var(--primarycolor);
+}
+.leftsidebook {
+    float: left;
+    width: 50%;
+}
+.leftsidebook p{
+    color: var(--paracolor);
+    font-size: 14px;
+}
+.paddbot {
+    padding-bottom: 30px;
+}
+.leftsidebook a {
+    padding: 7px 50px;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+.themeBtn{
+    background-color: var(--primarycolor);
+    border:1px solid var(--primarycolor);
+
+}
+.simpleBtn{
+    background-color: transparent;
+    border:1px solid var(--paracolor);
+    color: var(--paracolor) !important;
+}
+.mainbooxk.clearfix {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    height: 570px;
+}
+.rightsideimg {
+    width: 894px;
+    float: left;
+}
+.rightsideimg img{
+    width: 100%;
+}
+.secondbookwriter{
+    background-color: var(--whitecolor);
+    padding: 120px 0;
+}
+.secondmainbooxk.clearfix {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    height: 570px;
+}
+.secondleftsidebook a {
+    padding: 7px 50px;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+.secondleftsidebook p{
+    color: var(--paracolor);
+    font-size: 14px;
+}
+.secondrightsideimg {
+    width: 100%;
+}
+.secondrightsideimg img {
+    width: 610px;
+}
+.secondleftsidebook {
+    padding-left: 37px;
+}
+.secondleftsidebook h1 {
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 85%;
+}
+.secondleftsidebook p{
+    color: var(--paracolor);
+    font-size: 14px;
 }
