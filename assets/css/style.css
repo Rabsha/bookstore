@@ -11,6 +11,7 @@ body{
     --textcolor: #50A7A1;
     --paracolor: #858585;
     --sectionbg: #ECECEC;
+    --redColor:#C0272D;
 }
 *{
     margin:0;
@@ -32,7 +33,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
 }
 .texttopOrder h2 {
     text-align: center;
-    color: #fff;
+    color: var(--whitecolor);
     font-size: 18px;
     padding: 5px 0;
     font-weight: 600;
@@ -87,7 +88,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
 .mybtnlivechat {
     text-decoration: none;
     background: var(--primarycolor);
-    color: #fff !important;
+    color: var(--whitecolor) !important;
     font-weight: 500 !important;
     padding: 10px 18px;
     display: inline-block;
@@ -159,7 +160,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
     width: 100%;
     padding: 12px 18px;
     font-size: 14px;
-    border: #fff;
+    border: var(--whitecolor);
 }
 .form-group {
     margin-bottom: 12px;
@@ -173,7 +174,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
     padding: 11px 0;
     background-color: #F4780F;
     font-weight: 700;
-    color: #fff;
+    color: var(--whitecolor);
     font-size: 15px;
 }
 .bannerclients img {
@@ -182,14 +183,14 @@ h1,h2,h3,h4,h5,h6,p,ul{
 .btn-promotion {
     background: #50A7A1;
     padding: 10px 50px;
-    color: #fff;
+    color: var(--whitecolor);
     text-decoration: none;
     display: inline-block;
     font-size: 14px;
 }
 .btncall {
     background: #C0272D;
-    color: #fff;
+    color: var(--whitecolor);
     padding: 8px 14px;
     display: inline-block;
 }
@@ -199,14 +200,14 @@ h1,h2,h3,h4,h5,h6,p,ul{
     top: 70%;
 }
 .promotionicons a {
-    color: #fff;
+    color: var(--whitecolor);
 }
 .promotionicons a:hover {
-    color: #fff;
+    color: var(--whitecolor);
 }
 .btncomments{
     background: var(--primarycolor);
-    color: #fff;
+    color: var(--whitecolor);
     padding: 8px 12px;
     display: inline-block;
 }
@@ -266,7 +267,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
     padding: 8px 45px;
     display: inline-block;
     font-size: 12px;
-    color: #ffff;
+    color: var(--whitecolor);
 }
 .themecolorbtn{
     background-color: var(--textcolor);
@@ -297,7 +298,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
     width: 50%;
     float: right;
     margin-top: -335px;
-    background: #fff;
+    background: var(--whitecolor);
 }
 .rightthere {
     float: right;
@@ -314,7 +315,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
 .btn-showall a {
     padding: 6px 10px;
     display: inline-block;
-    color: #fff;
+    color: var(--whitecolor);
     text-decoration: none;
 }
 .bookwriter{
@@ -342,7 +343,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
 .leftsidebook a {
     padding: 7px 50px;
     display: inline-block;
-    color: #fff;
+    color: var(--whitecolor);
     text-decoration: none;
     font-size: 14px;
 }
@@ -371,9 +372,9 @@ h1,h2,h3,h4,h5,h6,p,ul{
 .rightsideimg img{
     width: 100%;
 }
-.secondbookwriter{
+.secondbookwriter {
     background-color: var(--whitecolor);
-    padding: 120px 0;
+    padding: 120px 0 100px 0;
 }
 .secondmainbooxk.clearfix {
     display: flex;
@@ -386,7 +387,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
 .secondleftsidebook a {
     padding: 7px 50px;
     display: inline-block;
-    color: #fff;
+    color: var(--whitecolor);
     text-decoration: none;
     font-size: 14px;
 }
@@ -412,4 +413,124 @@ h1,h2,h3,h4,h5,h6,p,ul{
 .secondleftsidebook p{
     color: var(--paracolor);
     font-size: 14px;
+}
+.sellyour {
+    background-color: var(--sectionbg);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.clickbtn a{
+    padding: 7px 50px;
+    display: inline-block;
+    text-decoration: none;
+}
+.redcolotext{
+    color: var(--redColor);
+}
+.redthemeBtn{
+    background-color: var(--redColor);
+    color:var(--whitecolor);
+    border: 1px solid var(--redColor);
+}
+.redthemeBtn:hover{
+    color:var(--whitecolor);
+}
+.sellheading {
+    text-align: center;
+}
+.sellheading h1 {
+    font-size: 46px;
+    padding-bottom: 12px;
+    color: var(--blackcolor);
+    text-transform: uppercase;
+}
+.sellheading p {
+    width: 70%;
+    margin: 0 auto;
+    color: var(--paracolor);
+    font-size: 14px;
+}
+.booklogos {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 25px 0 30px 0;
+}
+.booklogos img {
+    padding: 0 28px;
+    width: 220px;
+}
+.starter-template {
+    padding: 0 15px;
+  }
+  
+  .card {
+    width: 100% !important; 
+  }
+  .mycoloractive{
+    color:var(--primarycolor) !important;
+  }
+.nav-link {
+    border: 1px solid var(--secondarycolor) !important;
+    border-radius: 0 !important;
+    padding: 10px 60px;
+    color: var(--paracolor);
+    font-weight: 600;
+    border-right: none !important;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.myborderss{
+    border-right: 1px solid var(--secondarycolor) !important;
+}
+ul#myTab {
+    border-bottom: none;
+    display: flex;
+    justify-content: center;
+}
+.tabcategory {
+    padding: 80px 0;
+}
+.tabsheading {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.tabsheading h1 {
+    font-size: 48px;
+    padding-bottom: 0;
+    color: var(--primarycolor);
+    text-transform: uppercase;
+}
+.card-img-top{
+    border-radius: 0 !important;
+    border:none !important;
+}
+.tab-content {
+    margin-top: 30px;
+}
+.card {
+    text-align: center;
+    border: 1px solid var(--secondarycolor);
+    border-radius: 0;
+    margin-top: 16px;
+}
+img.card-img-top {
+    width: 225px;
+    margin: 0 auto;
+    border: 1px solid var(--secondarycolor);
+    padding: 35px 20px;
+}
+.mainpublish{
+    padding-bottom: 40px;
+}
+.mycolorbg{
+    border: 1px solid var(--secondarycolor);
+    background-color: transparent;
+}
+.mycolorbg a{
+    color: var(--primarycolor) !important;
+    font-weight: 600;
 }
