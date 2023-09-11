@@ -534,3 +534,52 @@ img.card-img-top {
     color: var(--primarycolor) !important;
     font-weight: 600;
 }
+.packagesuit {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.packageswork{
+    background-color: var(--sectionbg);
+}
+.packagenameone {
+    background-color: var(--redColor);
+    color: var(--whitecolor);
+    padding: 15px;
+    text-align: center;
+}
+.packdetails {
+    background-color: var(--whitecolor);
+    text-align: center;
+}
+.packdetails li {
+    margin: 0 40px;
+    border-bottom: 1px solid var(--secondarycolor);
+    padding: 12px 0;
+    font-size: 14px;
+}
+.packdetails li img {
+    width: 20px;
+}
+.mainbb {
+    width: 1400px;
+}
+/* .packagebox {
+    width: 25%;
+    margin: 0 8px;
+} */
+.packagenameone h3 {
+    font-size: 26px;
+    font-weight: 400;
+}
+.packagenameone h4 {
+    font-size: 14px;
+    font-weight: 400;
+}
+.packagenameone p {
+    font-weight: 700;
+}
+.packdetails li p {
+    font-weight: 600;
+}
