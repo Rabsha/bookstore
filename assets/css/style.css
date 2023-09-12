@@ -1017,6 +1017,54 @@ img.card-img-top {
     font-size: 14px;
 }
 
-.accordionss{
-    padding: 80px 0;
+.accordionss {
+    padding: 80px 0 110px 0;
+}
+.mytwobooks{
+    background-color: var(--normalcolor);
+}
+
+.mytwobooksleft {
+    width: 48%;
+}
+.rightimgbook {
+    width: 45%;
+    margin-top: -53px;
+}
+.mytwobooksleft h1 {
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-bottom: 18px;
+    color:var(--whitecolor);
+}
+.mytwobooksleft p {
+    color: var(--whitecolor);
+    font-size: 16px;
+    padding-bottom: 25px;
+    color:var(--whitecolor);
+}
+
+.mytwobooksleft a {
+    padding: 8px 95px;
+    display: inline-block;
+    color: var(--whitecolor);
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+.btnChangeThemeOne{
+    background-color: var(--blackcolor);
+    border:1px solid var(--blackcolor);
+
+}
+.btnChangeThemeTwo{
+    background-color: var(--whitecolor);
+    border:1px solid var(--whitecolor);
+    color: var(--blackcolor) !important;
+    font-weight: 500;
+}
+.rightimgbook img {
+    width: 750px;
 }
