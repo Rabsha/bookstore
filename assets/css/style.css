@@ -15,6 +15,8 @@ body{
     --extracolor:#C2C2C2;
     --borderco: #A5A5A5;
     --testimonialborder: #9629CC;
+    --newbordercolor:#BEBEBE;  
+    --hovercolor:#CBCBCB;
 }
 *{
     margin:0;
@@ -201,6 +203,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
     position: fixed;
     right: -201px;
     top: 70%;
+    z-index: 9999;
 }
 .promotionicons a {
     color: var(--whitecolor);
@@ -709,40 +712,11 @@ img.card-img-top {
     width: 50%;
     text-transform: uppercase;
     font-weight: 400;
+    padding-bottom: 20px;
 }
 .headyellow p {
     font-size: 16px;
-}
-.slider {
-    width: 50%;
-    /* margin: 0 auto; */
-}
-
-.slick-slide {
-  margin: 0px 20px;
-}
-
-.slick-slide img {
-  width: 100%;
-}
-
-.slick-prev:before,
-.slick-next:before {
-  color: black;
-}
-
-
-.slick-slide {
-  transition: all ease-in-out .3s;
-  opacity: .2;
-}
-
-.slick-active {
-  opacity: .5;
-}
-
-.slick-current {
-  opacity: 1;
+    padding-bottom: 20px;
 }
 .boxtestimonial {
     text-align: center;
@@ -793,8 +767,9 @@ img.card-img-top {
     flex-direction: row;
     flex-wrap: nowrap;
 }
-.packageswork{
+.packageswork {
     background-color: var(--sectionbg);
+    padding: 100px 0;
 }
 .packagenameone {
     background-color: var(--redColor);
@@ -818,13 +793,18 @@ img.card-img-top {
 .mainbb {
     width: 1400px;
 }
-/* .packagebox {
-    width: 25%;
-    margin: 0 8px;
-} */
+.myparacolor p{
+    color: var(--blackcolor);
+}
 .packagenameone h3 {
     font-size: 26px;
     font-weight: 400;
+}
+.textdetails {
+    padding-top: 54%;
+}
+.textdetails p {
+    padding-bottom: 19px;
 }
 .packagenameone h4 {
     font-size: 14px;
@@ -835,4 +815,155 @@ img.card-img-top {
 }
 .packdetails li p {
     font-weight: 600;
+}
+.purplebox{
+    background-color: var(--normalcolor);
+}
+.lightgbox{
+    background-color: var(--textcolor);
+}
+.orangebox{
+    background-color: var(--primarycolor);
+}
+.scrollitem .col-item
+{
+  border:#a8a8a8 2px solid;
+  text-align:center;
+}
+.item , .scrollBox
+{
+  margin-top:10px;
+}
+/* Basic styling for the slider container */
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+/* Styling for the slider content */
+.slider-content {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Styling for individual slides */
+.slide {
+    flex: 0 0 calc(50% - 15px); /* Display 2 slides at a time with a 15px margin in between */
+    max-width: 100%;
+    margin-right: 15px; /* Adjust as needed */
+}
+
+/* Styling for the pager dots */
+.slider-pager {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+.pager-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--redColor);
+    cursor: pointer;
+    margin: 0 5px; /* Adjust as needed */
+}
+
+.pager-dot.active {
+    background-color:transparent;
+    border: 1px solid var(--redColor);
+}
+
+/* Styling for the buttons and arrows */
+.slider-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 15px; */
+    position: relative;
+    top: -25px;
+}
+.slider-nav button {
+    border: 1px solid var(--newbordercolor);
+    width: 35px;
+    margin: 0 10px; /* Adjust as needed */
+    font-size: 22px;
+    background: transparent;
+    border-radius: 100px;
+    cursor: pointer;
+    height: 35px;
+    font-size: 18px;
+    color: var(--newbordercolor);
+}
+.mainauthor {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.myredli {
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.myredli a {
+    background: var(--hovercolor);
+    width: 100%;
+    display: inline-block;
+    color: var(--whitecolor);
+    padding: 12px 0;
+    text-decoration: none;
+}
+.myredli a:hover{
+    background: var(--redColor);
+}
+
+.mypurpleli {
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.mypurpleli a {
+    background: var(--hovercolor);
+    width: 100%;
+    display: inline-block;
+    color: var(--whitecolor);
+    padding: 12px 0;
+    text-decoration: none;
+}
+.mypurpleli a:hover{
+    background: var(--normalcolor);
+}
+.myligbox {
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.myligbox a {
+    background: var(--hovercolor);
+    width: 100%;
+    display: inline-block;
+    color: var(--whitecolor);
+    padding: 12px 0;
+    text-decoration: none;
+}
+.myligbox a:hover{
+    background: var(--textcolor);
+}
+.myorangeli {
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.myorangeli a {
+    background: var(--hovercolor);
+    width: 100%;
+    display: inline-block;
+    color: var(--whitecolor);
+    padding: 12px 0;
+    text-decoration: none;
+}
+.myorangeli a:hover{
+    background: var(--primarycolor);
 }
