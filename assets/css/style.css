@@ -149,10 +149,11 @@ h1,h2,h3,h4,h5,h6,p,ul{
     width: 100%;
 }
 .bannerheading h1 {
-    font-size: 55px;
+    font-size: 60px;
     text-transform: uppercase;
     font-weight: 400;
     padding-bottom: 5px;
+    width: 82%;
 }
 .bannerheading p {
     font-size: 16px;
@@ -464,7 +465,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
     display: flex;
     align-items: center;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-content: center;
     padding: 25px 0 30px 0;
     justify-content: space-around;
@@ -1069,4 +1070,407 @@ img.card-img-top {
 }
 .rightimgbook img {
     width: 750px;
+}
+.achievement {
+    padding: 50px 0;
+}
+.mainachiev {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.footsidehead {
+    width: 20%;
+}
+.footsidehead h1 {
+    font-weight: 400;
+}
+.footerbottom{
+    padding: 35px 0;
+    background-color: var(--primarycolor);
+}
+.orangelabel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.boxfotone {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.boxfotone i {
+    padding: 0 10px 0 0;
+    font-size: 24px;
+}
+.boxfotone p {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.authorsection {
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+.mainfooter {
+    background-color: var(--blackcolor);
+    padding: 40px 0 60px 0;
+}
+.oneshere h1 {
+    color: var(--whitecolor);
+    font-size: 26px;
+    font-weight: 400;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+.oneshere li a {
+    color: var(--hovercolor);
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px 0;
+    display: inline-block;
+}
+.oneshere li img {
+    padding-top: 16px;
+}
+.myimgs img {
+    width: 200px;
+}
+.footerboxx {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-bottom: 60px;
+}
+.oneshere li a:hover{
+    color:var(--primarycolor);
+}   
+.termss li a {
+    float: left;
+    border-right: 1px solid var(--hovercolor);
+    padding: 0 8px 0 8px;
+    color: var(--hovercolor);
+    text-decoration: none;
+    font-size: 14px;
+}
+.leftnopadd{
+    padding-left: 0 !important;
+}
+.noborder {
+    border-right: none !important;
+}
+.textworkbottom p {
+    color: var(--hovercolor);
+}
+.textworkbottom{
+    text-align: center;
+}
+.footerline {
+    border-top: 1px solid #464646;
+    padding-top: 30px;
+}
+.mainfooter {
+    background-color: var(--blackcolor);
+    padding: 40px 0 36px 0;
+}
+
+
+@media only screen and (max-width: 1200px) 
+{
+    body{
+        overflow-x: hidden;
+    }
+    .topmenus li a {
+        padding-left: 14px;
+        padding-right: 14px;
+        font-size: 16px;
+    }
+    .mycallbtn {
+        font-size: 16px;
+        padding-right: 18px;
+    }
+    .mybtnlivechat {
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+    .texttopOrder h2 {
+        font-size: 16px;
+    }
+    .widemenu {
+        justify-content: space-around;
+    }
+    .widemenu li a {
+        padding: 0 16px;
+        font-size: 13px;
+    }
+    .banner {
+        height: 600px;
+    }
+    .bannerheading h1 {
+        width: 100%;
+    }
+    .bannerdetails {
+        padding-top: 57px;
+    }
+    .bannerheading h1 {
+        font-size: 55px;
+    }
+    .imgbook {
+        padding-top: 60px;
+    }
+    .services {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .serviceimgbook {
+        width: 790px;
+    }
+    .serviceprompt {
+        padding: 19px 50px;
+        margin-top: -312px;
+    }
+    .booklogos img {
+        padding: 0 25px;
+        width: 196px;
+    }
+    .nav-link {
+        padding:10px 35px;
+    }
+    .rightimgbook {
+        width: 55%;
+    }
+    .rightimgbook img {
+        width: 100%;
+    }    
+    /* .mainauthor {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .headyellow h1 {
+        width: 100%;
+        text-align: center;
+    }
+    .slider-nav {
+        justify-content: space-around;
+    }
+    .headyellow p {
+        text-align: center;
+    } */
+    .footlogo img {
+        width: 100%;
+    }
+    .footsidehead h1 {
+        font-size: 27px;
+    }
+}
+@media only screen and (max-width: 1145px) 
+{
+    .imgbook {
+        padding-top: 0;
+    }
+    .bannerdetails {
+        padding-top: 84px;
+    }
+    .bannerheading h1 {
+        font-size: 40px;
+    }
+    .banner {
+        height: 510px;
+    }
+    .serviceheading h1 {
+        font-size: 35px;
+    }
+    .serviceimgbook {
+        width: 700px;
+    }
+    .serviceprompt {
+        padding: 12px 25px;
+        margin-top: -283px;
+    }
+    .booklogos img {
+        padding: 0 25px;
+        width: 180px;
+    }
+}
+@media only screen and (max-width: 1024px) 
+{
+    .mainthreemenus {
+        justify-content: center;
+    }
+    .topmenus li a {
+        font-size: 14px;
+    }
+    .mycallbtn {
+        font-size: 14px;
+        padding-right: 14px;
+    }
+    .mybtnlivechat {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+    .menutwo {
+        padding: 16px 0px;
+    }
+    .widemenu li a {
+        padding: 0 15px;
+        font-size: 12px;
+    }
+    .bannerheading h1 {
+        font-size: 35px;
+    }
+    .bannerform {
+        background: #D4D4D4;
+        padding: 12px 14px;
+        margin-bottom: 12px;
+    }
+    .topbarform input {
+        padding: 8px 14px;
+    }
+    .form-group button {
+        padding: 8px 0;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .banner {
+        height: 460px;
+    }
+    .bannerdetails {
+        padding-top: 65px;
+    }
+    .serviceprompt h1 {
+        font-size: 18px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .leftsidebook h1 {
+        font-size: 30px;
+    }
+    .leftsidebook h3 {
+        font-size: 20px;
+    }
+    .leftsidebook a {
+        padding: 7px 30px;
+    }
+    .secondrightsideimg img {
+        width: 500px;
+    }
+    .secondbookwriter {
+        padding: 60px 0 60px 0;
+    }
+    .secondleftsidebook h1 {
+        width: 100%;
+        font-size: 30px;
+    }
+    .secondleftsidebook h3 {
+        font-size: 20px;
+    }
+    .rightsideimg {
+        width: 600px;
+    }
+    .secondleftsidebook a {
+        padding: 7px 30px;
+    }
+    .nav-link {
+        padding: 10px 25px;
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 991px) 
+{
+    .serviceimgbook {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        float: none;
+    }
+    .serviceimgbook img {
+        width: 80%;
+    }
+    .serviceprompt {
+        width: 80%;
+        float: none;
+        margin-top: 0;
+        margin: 0 auto;
+        margin-top:12px;
+    }
+    .serviceheading h1 {
+        font-size: 27px;
+    }
+    .firstservice.clearfix {
+        padding-bottom: 40px;
+    }
+    .leftsidebook h1 {
+        font-size: 27px;
+    }
+    .secondleftsidebook h1 {
+        font-size: 27px;
+    }
+    .sellheading h1 {
+        font-size: 27px;
+    }
+    .booklogos img {
+        padding: 0 20px;
+        width: 155px;
+    }
+    .clickbtn a {
+        padding: 7px 40px;
+        font-size: 14px;
+    }
+    .leftheadings h1 {
+        font-size: 27px;
+    }
+    .leftheadings a {
+        padding: 7px 40px;
+        font-size: 12px;
+    }
+    .qualityheading h1 {
+        font-size: 27px;
+    }
+    .mainquality {
+        height: inherit;
+    }
+    .qualitybtn a {
+        padding: 7px 40px;
+        font-size: 12px;
+    }
+    .btndemand a {
+        padding: 10px 40px;
+        font-size: 12px;
+    }
+    .packdetails li {
+        margin: 0 20px;
+        padding: 10px 0;
+        font-size: 12px;
+    }
+    .textdetails p {
+        padding-bottom: 14px;
+        font-size: 12px;
+    }
+    .textdetails {
+        padding-top: 100%;
+    }
+    .mytwobooksleft h1 {
+        font-size: 27px;
+    }
+    .mytwobooksleft a {
+        padding: 7px 40px;
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    .boxfotone i {
+        font-size: 20px;
+    }
+    .boxfotone p {
+        font-size: 15px;
+    }
+    .oneshere h1 {
+        font-size: 20px;
+    }
 }
