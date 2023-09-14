@@ -55,7 +55,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
 .mainthreemenus {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-content: center;
     flex-direction: row;
 }
@@ -109,8 +109,9 @@ h1,h2,h3,h4,h5,h6,p,ul{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     align-content: center;
+    flex-wrap: wrap;
 }
 .widemenu li {
     float: left;
@@ -119,8 +120,9 @@ h1,h2,h3,h4,h5,h6,p,ul{
 .widemenu li a {
     color: var(--blackcolor);
     text-decoration: none;
-    padding: 0 33px;
-    font-weight: 700;
+    padding: 0 6px;
+    font-weight: 600;
+    font-size: 13px;
 }
 .widemenu li a:hover{
     color:var(--whitecolor);
@@ -1178,8 +1180,15 @@ img.card-img-top {
     background-color: var(--blackcolor);
     padding: 40px 0 36px 0;
 }
-
-
+.topmenus, .menutwo{
+    display: block;
+}
+.sidenav {
+    display: none;
+}
+.mobileview{
+    display: none;
+}
 @media only screen and (max-width: 1200px) 
 {
     body{
@@ -1205,8 +1214,8 @@ img.card-img-top {
         justify-content: space-around;
     }
     .widemenu li a {
-        padding: 0 16px;
-        font-size: 13px;
+        padding: 0 5px;
+        font-size: 11px;
     }
     .banner {
         height: 600px;
@@ -1298,9 +1307,73 @@ img.card-img-top {
         padding: 0 25px;
         width: 180px;
     }
+    .topmenus, .menutwo{
+        display: none;
+    }
+    .sidenav {
+        display: block;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111111f2;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+      
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+      
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+      
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    .sidenav a {
+        font-size: 15px;
+        padding: 5px 20px;
+    }
+    .mainnmenus {
+        width: 50%;
+    }
+    .textheadmenu {
+        color: var(--primarycolor);
+        padding-left: 20px;
+        padding-bottom: 8px;
+        padding-top: 18px;
+        font-weight: bold;
+    }
+    .main-menus {
+        padding: 18px 0;
+    }
+    .callactionsbtn {
+        width: 50%;
+        text-align: right;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
 }
 @media only screen and (max-width: 1024px) 
 {
+    .mainheadingsize{
+        font-size: 30px !important;
+    }
     .mainthreemenus {
         justify-content: center;
     }
@@ -1349,9 +1422,9 @@ img.card-img-top {
         padding-top: 5px;
         padding-bottom: 5px;
     }
-    .leftsidebook h1 {
+    /* .leftsidebook h1 {
         font-size: 30px;
-    }
+    } */
     .leftsidebook h3 {
         font-size: 20px;
     }
@@ -1366,7 +1439,6 @@ img.card-img-top {
     }
     .secondleftsidebook h1 {
         width: 100%;
-        font-size: 30px;
     }
     .secondleftsidebook h3 {
         font-size: 20px;
@@ -1384,6 +1456,9 @@ img.card-img-top {
 }
 @media only screen and (max-width: 991px) 
 {
+    .mainheadingsize{
+        font-size: 27px !important;
+    }
     .serviceimgbook {
         width: 100%;
         text-align: center;
@@ -1400,20 +1475,8 @@ img.card-img-top {
         margin: 0 auto;
         margin-top:12px;
     }
-    .serviceheading h1 {
-        font-size: 27px;
-    }
     .firstservice.clearfix {
         padding-bottom: 40px;
-    }
-    .leftsidebook h1 {
-        font-size: 27px;
-    }
-    .secondleftsidebook h1 {
-        font-size: 27px;
-    }
-    .sellheading h1 {
-        font-size: 27px;
     }
     .booklogos img {
         padding: 0 20px;
@@ -1423,15 +1486,9 @@ img.card-img-top {
         padding: 7px 40px;
         font-size: 14px;
     }
-    .leftheadings h1 {
-        font-size: 27px;
-    }
     .leftheadings a {
         padding: 7px 40px;
         font-size: 12px;
-    }
-    .qualityheading h1 {
-        font-size: 27px;
     }
     .mainquality {
         height: inherit;
@@ -1456,9 +1513,6 @@ img.card-img-top {
     .textdetails {
         padding-top: 100%;
     }
-    .mytwobooksleft h1 {
-        font-size: 27px;
-    }
     .mytwobooksleft a {
         padding: 7px 40px;
         font-size: 12px;
@@ -1473,4 +1527,528 @@ img.card-img-top {
     .oneshere h1 {
         font-size: 20px;
     }
+    .leftsidebook h3 {
+        font-size: 20px;
+        padding-bottom: 12px;
+    }
+    .leftsidebook h1 {
+        padding-bottom: 12px;
+    }
+    .secondleftsidebook h1 {
+        padding-bottom: 12px;
+    }
+    .card-img-top {
+        width: 100%;
+    }
 }
+@media screen and (max-width: 800px) 
+{
+    .mainheadingsize{
+        font-size: 22px !important;
+    }
+    .bannerheading h1 {
+        font-size: 28px;
+    }
+    .bannerheading p {
+        font-size: 14px;
+    }
+    .bannerform {
+        padding: 10px 11px;
+    }
+    .bannerdetails {
+        padding-top: 45px;
+    }
+    .banner {
+        height: 360px;
+    }
+    .leftsidebook h1 {
+        padding-bottom: 12px;
+    }
+    .leftsidebook h3 {
+        font-size: 20px;
+        padding-bottom: 12px;
+    }
+    .leftsidebook p {
+        font-size: 12px;
+        padding-bottom: 20px;
+    }
+    .leftsidebook a {
+        padding: 7px 26px;
+        font-size: 12px;
+    }
+    .secondrightsideimg img {
+        width: 400px;
+    }
+    .secondleftsidebook p {
+        padding-bottom: 20px;
+        font-size: 12px;
+    }
+    .secondleftsidebook h3 {
+        font-size: 20px;
+        padding-bottom: 12px;
+    }
+    .secondleftsidebook a {
+        padding: 7px 26px;
+        font-size: 12px;
+    }
+    .mainbooxk.clearfix{
+        height: inherit;
+    }
+    .secondmainbooxk.clearfix{
+        height: inherit;
+    }
+    .services {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .booklogos img {
+        padding: 0 10px;
+        width: 125px;
+    }
+    .clickbtn a {
+        padding: 7px 26px;
+        font-size: 12px;
+    }
+    .tabsheading h1 {
+        font-size: 30px;
+    }
+    .nav-link {
+        padding: 10px 18px;
+        font-size: 12px;
+    }
+    .card-img-top {
+        width: 100% !important;
+    }
+    .featureheading h1 {
+        font-size: 30px;
+    }
+    .btn-showall a {
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+    .leftheadings p {
+        font-size: 12px;
+    }
+    .leftheadings a {
+        padding: 7px 26px;
+    }
+    .qualityheading p {
+        font-size: 12px;
+    }
+    .mainquality p {
+        font-size: 12px;
+    }
+    .counter {
+        font-size: 40px;
+    }
+    .counterbox p {
+        font-size: 12px;
+    }
+    .demandexpert {
+        padding: 80px 0;
+    }
+    .counterss {
+        padding-bottom: 30px;
+    }
+    .btndemand a {
+        padding: 7px 26px;
+        font-size: 12px;
+    }
+    .mytwobooksleft a {
+        padding: 7px 26px;
+        font-size: 12px;
+    }
+    .textworkbottom {
+        text-align: right;
+    }
+}
+@media screen and (max-width: 768px) 
+{
+    .bannerheading p {
+        font-size: 12px;
+    }
+    .bannerheading h1 {
+        font-size: 26px;
+    }
+    .mainheadingsize {
+        font-size: 26px !important;
+    }
+    .boxfotone p {
+        font-size: 12px;
+    }
+    .footerboxx {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-bottom: 60px;
+    }
+    .oneshere {
+        padding-bottom: 22px;
+    }
+    .packagenameone h3 {
+        font-size: 12px;
+    }
+    .packagenameone h1 {
+        font-size: 22px;
+    }
+    .packagenameone h4 {
+        font-size: 10px;
+    }
+    .packagenameone p {
+        font-weight: 400;
+        font-size: 12px;
+    }
+    .textdetails {
+        padding-top: 86%;
+    }
+    .textdetails p {
+        padding-bottom: 12px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 767px) 
+{
+    .form-group {
+        margin-bottom: 12px;
+    }
+    .bannerdetails {
+        width: 70%;
+        padding-top: 70px;
+        float: none;
+        margin: 0 auto;
+        padding-bottom: 19px;
+    }
+    .form-group:last-child {
+        margin-bottom: 12px;
+    }
+    .banner {
+        height: inherit;
+    }
+    .bannerheading {
+        text-align: center;
+    }
+    .bannerheading h1 {
+        font-size: 30px;
+    }
+    .bannerheading p {
+        font-size: 16px;
+    }
+    .imgbook {
+        width: 65%;
+        float: none;
+        margin: 0 auto;
+        padding-top: 12px;
+    }
+    .mainparasize {
+        font-size: 12px !important;
+    }   
+    .mainbooxk.clearfix {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: nowrap;
+    }
+    .bookwriter {
+        padding: 50px 0;
+    }
+    .leftsidebook {
+        width: 80%;
+        text-align: center;
+    }
+    .rightsideimg {
+        width: 70%;
+        float: none;
+    }
+    .secondmainbooxk.clearfix {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-content: center;
+    }
+    
+    .secondbookwriter {
+        text-align: center;
+    }
+    .secondleftsidebook {
+        padding-left: 0;
+        width: 80%;
+        padding-top: 20px;
+    }
+    .booklogos {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        padding: 25px 0 30px 0;
+    }
+    .booklogos img {
+        width: 20%;
+        padding: 18px 10px;
+    }
+    ul#myTab {
+        border-bottom: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .nav-link {
+        border-right: 1px solid var(--secondarycolor) !important;
+    }
+    li.nav-item {
+        padding-bottom: 12px;
+    }
+    .card {
+        width: 40% !important;
+        margin: 0 auto;
+        margin-bottom: 13px;
+    }
+    .desiredhead {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        align-content: center;
+    }
+    .leftheadings {
+        width: 80%;
+        padding-bottom: 100px;
+        text-align: center;
+    }
+    .rightimgbook {
+        width: 60%;
+    }
+    .totalqualities {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .sellyour {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .packagesuit {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+    }
+    .textdetails {
+        padding-top: 0;
+    }
+    .mainbb {
+        width: 80%;
+    }
+    .packdetails {
+        margin-bottom: 18px;
+    }
+    .qualityheading {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .textdetails {
+        text-align: center;
+    }
+    .textdetails p {
+        padding-bottom: 12px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .packageswork {
+        padding: 50px 0;
+    }
+    .accordionss {
+        padding: 50px 0 50px 0;
+    }
+    .accordinitem {
+        padding-bottom: 35px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .mytwobooks {
+        padding: 50px 0;
+    }
+    .mytwobooksleft {
+        width: 80%;
+        text-align: center;
+    }
+    .rightimgbook {
+        width: 75%;
+        padding-top: 90px;
+    }
+    .mainachiev {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+    }
+    .footsidehead {
+        width: 80%;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .footlogo {
+        width: 20%;
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+    .orangelabel {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+    .boxfotone p {
+        font-size: 16px;
+    }
+    .boxfotone {
+        padding-bottom: 12px;
+    }
+    .boxfotone:last-child {
+        padding: 0;
+    }
+    .termss li a {
+        float: none;
+        padding: 0 8px 9px 8px;
+        display: inline-block;
+        border: none;
+    }
+    .textworkbottom {
+        text-align: center;
+    }
+    .termss.clearfix {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 414px) 
+{
+    .mobileview{
+        display: block;
+    }
+    .desktopview{
+        display: none;
+    }
+    .texttopOrder h2 {
+        font-size: 13px;
+    }
+    .mycallbtn {
+        padding-top: 5px;
+    }
+    .bannerdetails {
+        width: 100%;
+    }
+    .bannerheading p {
+        font-size: 14px;
+    }
+    .imgbook {
+        width: 100%;
+    }
+    .serviceheading p {
+        width: 100%;
+    }
+    .serviceimgbook img {
+        width: 100%;
+    }
+    .serviceprompt {
+        width: 100%;
+    }
+    .serviceprompt a {
+        padding: 8px 30px;
+    }
+    .leftsidebook {
+        width: 100%;
+    }
+    .rightsideimg {
+        width: 100%;
+        float: none;
+    }
+    .secondleftsidebook {
+        width: 100%;
+    }
+    .sellheading p {
+        width: 100%;
+    }
+    .booklogos img {
+        width: 40%;
+    }
+    ul#myTab {
+        border-bottom: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .card {
+        width: 75% !important;
+    }
+    .btn-showall{
+        width: 80%;
+    }
+    .featureheading p {
+        width: 100%;
+    }
+    .leftheadings {
+        width: 100%;
+    }
+    .rightimgbook {
+        width: 100%;
+        padding-top: 15px;
+    }
+    .qualityheading {
+        width: 100%;
+    }
+    .totalqualities {
+        width: 100%;
+    }
+    .mywidths h1 {
+        width: 100%;
+    }
+    .counter {
+        font-size: 45px;
+    }
+    .counterbox p {
+        font-size: 16px;
+    }
+    .accordinitem {
+        width: 100%;
+    }
+    .mytwobooksleft {
+        width: 100%;
+    }
+    .rightimgbook {
+        width: 100%;
+        padding-top: 84px;
+    }
+    .footlogo {
+        width: 40%;
+        padding-bottom: 45px;
+    }
+    .secondrightsideimg img {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 320px) 
+{
+    .serviceprompt a {
+        padding: 8px 14px;
+        font-size: 11px;
+    }
+    .qualitybtn a {
+        padding: 7px 26px;
+        font-size: 11px;
+    }
+    .mytwobooksleft a {
+        padding: 7px 14px;
+        font-size: 11px;
+    }
+    .boxfotone p {
+        font-size: 14px;
+    }
+}   
