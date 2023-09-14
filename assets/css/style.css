@@ -1197,6 +1197,80 @@ img.card-img-top {
 .mobileview{
     display: none;
 }
+
+.rightpop input {
+    width: 100%;
+    padding: 12px 18px;
+    font-size: 14px;
+    border: #EBEBEB;
+    background-color: #EBEBEB;
+}
+.rightpop h3 {
+    text-transform: uppercase;
+    font-size: 38px;
+}
+.rightpop h1 {
+    text-transform: uppercase;
+    font-size: 70px;
+}
+.rightpop h4 {
+    font-size: 40px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.myspnc{
+    color: var(--redColor);
+}
+.rightpop p {
+    color: var(--redColor);
+    padding-top: 20px;
+}
+.discountpopup {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+}
+.onemm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--whitecolor);
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    width: 68%;
+    margin: 0 auto;
+    padding: 30px 25px;
+}
+.leftpop img {
+    width: 93%;
+}
+/* Styling for the popup container */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Background with opacity */
+    z-index: 1;
+}
+
+/* Styling for the popup content */
+.popup-content {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
 @media only screen and (max-width: 1200px) 
 {
     body{
@@ -1303,6 +1377,25 @@ img.card-img-top {
     }
     .footsidehead h1 {
         font-size: 27px;
+    }
+    .rightpop h3 {
+        font-size: 30px;
+    }
+    .rightpop h4 {
+        font-size: 27px;
+    }
+    .rightpop h1 {
+        font-size: 55px;
+    }
+    .leftpop {
+        width: 50%;
+    }
+    .leftpop img {
+        width: 100%;
+    }
+    .rightpop {
+        width: 50%;
+        padding-left: 20px;
     }
 }
 @media only screen and (max-width: 1145px) 
@@ -1602,6 +1695,19 @@ img.card-img-top {
     }
     .card-img-top {
         width: 100%;
+    }
+    .rightpop h4 {
+        font-size: 22px;
+    }
+    .rightpop h1 {
+        font-size: 40px;
+    }
+    .rightpop h3 {
+        font-size: 22px;
+    }
+    .rightpop p {
+        padding-top: 12px;
+        font-size: 12px;
     }
 }
 @media screen and (max-width: 800px) 
