@@ -839,6 +839,7 @@ img.card-img-top {
 {
   margin-top:10px;
 }
+
 /* Basic styling for the slider container */
 .slider-container {
     position: relative;
@@ -850,35 +851,13 @@ img.card-img-top {
 .slider-content {
     display: flex;
     transition: transform 0.3s ease-in-out;
-    padding: 0 12px;
 }
 
 /* Styling for individual slides */
 .slide {
-    flex: 0 0 calc(50% - 15px); /* Display 2 slides at a time with a 15px margin in between */
-    max-width: 100%;
+    flex: 0 0 100%;
+    max-width: 50%;
     margin-right: 15px; /* Adjust as needed */
-}
-
-/* Styling for the pager dots */
-.slider-pager {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 35px;
-}
-.pager-dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: var(--redColor);
-    cursor: pointer;
-    margin: 0 5px; /* Adjust as needed */
-}
-
-.pager-dot.active {
-    background-color:transparent;
-    border: 1px solid var(--redColor);
 }
 
 /* Styling for the buttons and arrows */
@@ -886,10 +865,11 @@ img.card-img-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin-top: 15px; */
-    position: relative;
-    top: -25px;
+    margin-top: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
+
 .slider-nav button {
     border: 1px solid var(--newbordercolor);
     width: 35px;
@@ -902,6 +882,34 @@ img.card-img-top {
     font-size: 18px;
     color: var(--newbordercolor);
 }
+
+/* Styling for pagination dots */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color:var(--redColor);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.active {
+    border:1px solid var(--redColor);
+    background-color: transparent;
+}
+
+/* Styling for the additional image */
+.additional-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
 .mainauthor {
     display: flex;
     justify-content: space-between;
@@ -1194,6 +1202,40 @@ img.card-img-top {
     body{
         overflow-x: hidden;
     }
+
+    .mainauthor {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .slider-content {
+        display: flex;
+        transition: transform 0.3s ease-in-out;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    .slide {
+        flex: 0 0 100%;
+        max-width: 68%;
+        margin-right: 15px;
+    }
+    .headyellow h1 {
+        width: 100%;
+    }
+    .yellowbook {
+        width: 32%;
+    }
+    .yellowbook img {
+        width: 437px;
+    }
+    .mainheadtestimonial {
+        width: 63%;
+    }
+
     .topmenus li a {
         padding-left: 14px;
         padding-right: 14px;
@@ -1255,23 +1297,7 @@ img.card-img-top {
     }
     .rightimgbook img {
         width: 100%;
-    }    
-    /* .mainauthor {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-    .headyellow h1 {
-        width: 100%;
-        text-align: center;
-    }
-    .slider-nav {
-        justify-content: space-around;
-    }
-    .headyellow p {
-        text-align: center;
-    } */
+    }   
     .footlogo img {
         width: 100%;
     }
@@ -1367,6 +1393,43 @@ img.card-img-top {
         display: flex;
         align-items: center;
         justify-content: flex-end;
+    }
+    .mainauthor {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    .mainheadtestimonial {
+        width: 75%;
+        padding: 0;
+    }
+    .slide {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-right: 15px;
+    }
+    .slider-content {
+        display: flex;
+        transition: transform 0.3s ease-in-out;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .yellowbook {
+        width: 100%;
+        padding-top: 48px;
+        text-align: center;
+    }
+    .slide {
+        flex: 0 0 96%;
+        max-width: 98%;
+        margin-right: 15px;
+    }
+    .headyellow {
+        text-align: center;
     }
 }
 @media only screen and (max-width: 1024px) 
@@ -2033,6 +2096,32 @@ img.card-img-top {
     .secondrightsideimg img {
         width: 100%;
     }
+    .slider-nav {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .yellowbook img {
+        width: 350px;
+    }
+    .yellowbook {
+        width: 100%;
+        text-align: left;
+    }
+    .slide {
+        flex: 0 0 96%;
+        max-width: 94%;
+        margin-right: 8px;
+    }
+    .boxtestimonial h1 {
+        font-size: 30px;
+    }
+    .boxtestimonial p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+    .boxtestimonial h3 {
+        font-size: 20px;
+    }
 }
 @media screen and (max-width: 320px) 
 {
@@ -2050,5 +2139,33 @@ img.card-img-top {
     }
     .boxfotone p {
         font-size: 14px;
+    }
+    .mainheadtestimonial {
+        width: 90%;
+    }
+    .boxtestimonial {
+        padding: 20px;
+    }
+    .slide {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-right: 8px;
+    }
+    .yellowbook img {
+        width: 300px;
+    }
+    .promotionicons {
+        right: -183px;
+        top: 60%;
+    }
+    .btn-promotion {
+        padding: 10px 42px;
+        font-size: 13px;
+    }
+    .btncall {
+        padding: 8px 9px;
+    }
+    .btncomments {
+        padding: 8px 7px;
     }
 }   

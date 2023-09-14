@@ -636,7 +636,7 @@
         <div class="authorsection">
             <div class="mainauthor">
                 <div class="yellowbook">
-                    <img src="assets/images/yellowbook.png">
+                    <img src="assets/images/yellowbook.png" alt="Additional Image" id="additionalImage">
                 </div>
                 <div class="mainheadtestimonial">
                     <div class="headyellow">
@@ -686,14 +686,17 @@
                                         <h6>Marketer</h6>
                                     </div>
                                 </div>
-                                <!-- Add more slides here as needed -->
                             </div>
                         </div>
-                        <div class="slider-pager" id="pager">
-                        </div>
                         <div class="slider-nav">
-                            <button id="prevBtn" onclick="prevSlide()"><i class="fa-solid fa-angle-left"></i></button>
-                            <button id="nextBtn" onclick="nextSlide()"><i class="fa-solid fa-angle-right"></i></button>
+                            <button id="prevBtn"><i class="fa-solid fa-angle-left"></i></button>
+                            <button id="nextBtn"><i class="fa-solid fa-angle-right"></i></button>
+                        </div>
+                        <div class="pagination">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
                         </div>
                     </div>
                 </div>
@@ -1167,29 +1170,62 @@ $('a[data-toggle=tab]').each(function () {
 })(jQuery);
 </script>
 <script>
-    const sliderContent = document.getElementById('slider');
-    const pagerContainer = document.getElementById('pager');
+    // JavaScript for the slider
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const sliderContent = document.querySelector('.slider-content');
     const slides = document.querySelectorAll('.slide');
-    const pagerDots = [];
+    const dots = document.querySelectorAll('.dot');
+    const additionalImage = document.getElementById('additionalImage');
     let currentIndex = 0;
-    let intervalId;
 
-    // Create pager dots dynamically
-    for (let i = 0; i < slides.length; i++) {
-        const dot = document.createElement('span');
-        dot.className = 'pager-dot';
-        dot.addEventListener('click', () => goToSlide(i));
-        pagerContainer.appendChild(dot);
-        pagerDots.push(dot);
-    }
+    // Images for the slider
+    const images = [
+        'assets/images/yellowbook.png',
+        'assets/images/yellowbook.png',
+        'assets/images/yellowbook.png',
+        'assets/images/yellowbook.png'
+    ];
+
+    // Event listeners for prev and next buttons
+    prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        updateSlider();
+        updateAdditionalImage();
+        updateDots();
+    });
+
+    nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        updateSlider();
+        updateAdditionalImage();
+        updateDots();
+    });
+
+    // Event listener for pagination dots
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            currentIndex = index;
+            updateSlider();
+            updateAdditionalImage();
+            updateDots();
+        });
+    });
 
     // Function to update the slider
     function updateSlider() {
-        const translateX = -currentIndex * (slides[0].offsetWidth + 15); // 15px margin
+        const translateX = -currentIndex * slides[0].offsetWidth;
         sliderContent.style.transform = `translateX(${translateX}px)`;
+    }
 
-        // Update pager dots
-        pagerDots.forEach((dot, index) => {
+    // Function to update the additional image
+    function updateAdditionalImage() {
+        additionalImage.src = images[currentIndex];
+    }
+
+    // Function to update the dots
+    function updateDots() {
+        dots.forEach((dot, index) => {
             if (index === currentIndex) {
                 dot.classList.add('active');
             } else {
@@ -1197,47 +1233,6 @@ $('a[data-toggle=tab]').each(function () {
             }
         });
     }
-
-    // Function to go to a specific slide when clicking a pager dot
-    function goToSlide(index) {
-        currentIndex = index;
-        updateSlider();
-    }
-
-    // Function to go to the previous slide
-    function prevSlide() {
-        currentIndex--;
-        if (currentIndex < 0) {
-            currentIndex = slides.length - 2; // Loop to the last pair of slides
-        }
-        updateSlider();
-    }
-
-    // Function to go to the next slide
-    function nextSlide() {
-        currentIndex++;
-        if (currentIndex > slides.length - 2) {
-            currentIndex = 0; // Loop to the first pair of slides
-        }
-        updateSlider();
-    }
-
-    // Autoplay functionality
-    function startAutoplay() {
-        intervalId = setInterval(nextSlide, 3000); // Change slide every 3 seconds
-    }
-
-    function stopAutoplay() {
-        clearInterval(intervalId);
-    }
-
-    // Start autoplay when the page loads
-    startAutoplay();
-
-    // Pause autoplay when the user interacts with the slider
-    const sliderContainer = document.querySelector('.slider-container');
-    sliderContainer.addEventListener('mouseenter', stopAutoplay);
-    sliderContainer.addEventListener('mouseleave', startAutoplay);
 </script>
 <script>
 const accordionItemHeaders = document.querySelectorAll(
