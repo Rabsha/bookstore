@@ -13,6 +13,16 @@
     src: url(../webfonts/montserrat/Montserrat-SemiBold.otf);
 }
 
+@font-face {
+    font-family: fontBagator;
+    src: url(../webfonts/bagator/Bagator.otf);
+}
+
+@font-face {
+    font-family: fontSegoe;
+    src: url(../webfonts/segoefont/SEGOEUI.TTF);
+}
+
 body{
     overflow-x: hidden;
 }
@@ -138,6 +148,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
     padding: 0 6px;
     font-weight: 600;
     font-size: 13px;
+    font-family: fontMontserratMedium;
 }
 .widemenu li a:hover{
     color:var(--whitecolor);
@@ -166,11 +177,12 @@ h1,h2,h3,h4,h5,h6,p,ul{
     width: 100%;
 }
 .bannerheading h1 {
-    font-size: 60px;
+    font-size: 55px;
     text-transform: uppercase;
     font-weight: 400;
     padding-bottom: 5px;
     width: 82%;
+    font-family: fontBagator;
 }
 .bannerheading p {
     font-size: 16px;
@@ -186,6 +198,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
     padding: 12px 18px;
     font-size: 14px;
     border: var(--whitecolor);
+    font-family: fontMontserratRegular;
 }
 .form-group {
     margin-bottom: 12px;
@@ -201,6 +214,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
     font-weight: 700;
     color: var(--whitecolor);
     font-size: 15px;
+    font-family: fontMontserratRegular;
 }
 .bannerclients img {
     width: 100%;
@@ -256,6 +270,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
     color: var(--textcolor);
     text-transform: uppercase;
     font-weight: 400;
+    font-family: fontBagator;
 }
 .serviceheading p {
     width: 70%;
@@ -280,8 +295,8 @@ h1,h2,h3,h4,h5,h6,p,ul{
 .serviceprompt h1 {
     font-size: 18px;
     padding-top: 12px;
-    font-family: fontMontserrat;
     padding-bottom: 12px;
+    font-family: fontMontserratSemiBold;
 }
 .serviceprompt p {
     font-size: 12px;
@@ -358,6 +373,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
     font-size: 40px;
     font-weight: 400;
     text-transform: uppercase;
+    font-family: fontBagator;
 }
 .thmecolor{
     color: var(--primarycolor);
@@ -391,6 +407,9 @@ h1,h2,h3,h4,h5,h6,p,ul{
     background-color: transparent;
     border:1px solid var(--paracolor);
     color: var(--paracolor) !important;
+}
+.leftsidebook h3 {
+    font-family: fontBagator;
 }
 .mainbooxk.clearfix {
     display: flex;
@@ -445,6 +464,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
     font-weight: 400;
     text-transform: uppercase;
     width: 85%;
+    font-family: fontBagator;
 }
 .secondleftsidebook p{
     color: var(--paracolor);
@@ -470,6 +490,9 @@ h1,h2,h3,h4,h5,h6,p,ul{
     color:var(--whitecolor);
     border: 1px solid var(--redColor);
 }
+.secondleftsidebook h3 {
+    font-family: fontBagator;
+}
 .redthemeBtn:hover{
     color:var(--whitecolor);
 }
@@ -482,6 +505,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
     color: var(--blackcolor);
     text-transform: uppercase;
     font-weight: 400;
+    font-family: fontBagator;
 }
 .sellheading p {
     width: 70%;
@@ -522,7 +546,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
     border-right: none !important;
     text-transform: uppercase;
     font-size: 14px;
-    font-family: fontMontserrat;
+    font-family: fontMontserratSemiBold;
 }
 .myborderss{
     border-right: 1px solid var(--secondarycolor) !important;
@@ -545,6 +569,7 @@ ul#myTab {
     color: var(--blackcolor);
     text-transform: uppercase;
     font-weight: 400;
+    font-family: fontBagator;
 }
 .card-img-top{
     border-radius: 0 !important;
@@ -590,6 +615,7 @@ img.card-img-top {
     color: var(--whitecolor);
     text-transform: uppercase;
     font-weight: 400;
+    font-family: fontBagator;
 }
 .featureheading p {
     width: 70%;
@@ -619,6 +645,7 @@ img.card-img-top {
     font-weight: 400;
     text-transform: uppercase;
     padding-bottom: 18px;
+    font-family: fontBagator;
 }
 .purplecolor{
     color: var(--normalcolor);
@@ -688,6 +715,7 @@ img.card-img-top {
     color: var(--blackcolor);
     text-transform: uppercase;
     font-weight: 400;
+    font-family: fontBagator;
 }
 .qualityheading p {
     margin: 0 auto;
@@ -747,13 +775,15 @@ img.card-img-top {
 .counter {
     font-size: 55px;
     color: var(--textcolor);
+    font-family: fontBagator;
     font-weight: 400;
 }
 .headyellow h1 {
     font-size: 45px;
-    width: 50%;
+    width: 60%;
     text-transform: uppercase;
     font-weight: 400;
+    font-family: fontBagator;
     padding-bottom: 20px;
 }
 .headyellow p {
@@ -771,11 +801,14 @@ img.card-img-top {
     text-transform: uppercase;
     color: var(--redColor);
     padding-bottom: 15px;
+    font-family: fontBagator;
+
 }
 .boxtestimonial p {
     font-size: 14px;
     line-height: 25px;
     padding-bottom: 40px;
+    font-family: fontSegoe;
 }
 .boxtestimonial img {
     width: 100px;
@@ -785,6 +818,10 @@ img.card-img-top {
 .boxtestimonial h3 {
     font-size: 24px;
     padding-bottom: 8px;
+    font-family: fontBagator;
+}
+.boxtestimonial h6{
+    font-family: fontSegoe;
 }
 .slick-dots .slick-active {
     border: 1px solid var(--redColor);
@@ -847,6 +884,7 @@ img.card-img-top {
 }
 .textdetails p {
     padding-bottom: 19px;
+    font-family: fontSegoe;
 }
 .packagenameone h4 {
     font-size: 14px;
@@ -857,6 +895,7 @@ img.card-img-top {
 }
 .packdetails li p {
     font-weight: 600;
+    font-family: fontSegoe;
 }
 .purplebox{
     background-color: var(--normalcolor);
@@ -1066,6 +1105,7 @@ img.card-img-top {
     line-height: 1.5rem;
     border-top: 1px solid;
     font-size: 14px;
+    font-family: fontMontserratRegular;
 }
 
 .accordionss {
@@ -1088,12 +1128,14 @@ img.card-img-top {
     text-transform: uppercase;
     padding-bottom: 18px;
     color:var(--whitecolor);
+    font-family: fontBagator;
 }
 .mytwobooksleft p {
     color: var(--whitecolor);
     font-size: 16px;
     padding-bottom: 25px;
     color:var(--whitecolor);
+    font-family: fontSegoe;
 }
 
 .mytwobooksleft a {
@@ -1134,6 +1176,7 @@ img.card-img-top {
 }
 .footsidehead h1 {
     font-weight: 400;
+    font-family: fontBagator;
 }
 .footerbottom{
     padding: 35px 0;
@@ -1159,6 +1202,7 @@ img.card-img-top {
 .boxfotone p {
     font-size: 20px;
     text-transform: uppercase;
+    font-family: fontSegoe;
 }
 .authorsection {
     padding-top: 100px;
@@ -1174,6 +1218,7 @@ img.card-img-top {
     font-weight: 400;
     padding-bottom: 20px;
     text-transform: uppercase;
+    font-family: fontBagator;
 }
 .oneshere li a {
     color: var(--hovercolor);
@@ -1181,6 +1226,7 @@ img.card-img-top {
     font-size: 14px;
     padding: 5px 0;
     display: inline-block;
+    font-family: fontSegoe;
 }
 .oneshere li img {
     padding-top: 16px;
@@ -1221,6 +1267,7 @@ img.card-img-top {
 .footerline {
     border-top: 1px solid #464646;
     padding-top: 30px;
+    font-family: fontSegoe;
 }
 .mainfooter {
     background-color: var(--blackcolor);
@@ -1246,16 +1293,19 @@ img.card-img-top {
 }
 .rightpop h3 {
     text-transform: uppercase;
-    font-size: 38px;
+    font-size: 34px;
+    font-family: fontBagator;
 }
 .rightpop h1 {
     text-transform: uppercase;
+    font-family: fontBagator;
     font-size: 70px;
 }
 .rightpop h4 {
-    font-size: 40px;
+    font-size:36px;
     text-transform: uppercase;
     padding-bottom: 20px;
+    font-family: fontBagator;
 }
 .myspnc{
     color: var(--redColor);
