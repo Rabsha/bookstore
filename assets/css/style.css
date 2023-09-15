@@ -1,6 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: fontMontserratRegular;
+    src: url(../webfonts/montserrat/Montserrat-Regular.otf);
+}
+@font-face {
+    font-family: fontMontserratMedium;
+    src: url(../webfonts/montserrat/Montserrat-Medium.otf);
+}
+@font-face {
+    font-family: fontMontserratSemiBold;
+    src: url(../webfonts/montserrat/Montserrat-SemiBold.otf);
+}
+
 body{
-    font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
 }
 :root{
@@ -44,6 +57,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
     font-size: 18px;
     padding: 5px 0;
     font-weight: 600;
+    font-family: fontMontserratSemiBold;
 }
 .difftext{
     color:var(--primarycolor);
@@ -55,9 +69,10 @@ h1,h2,h3,h4,h5,h6,p,ul{
 .mainthreemenus {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     align-content: center;
     flex-direction: row;
+    font-family: fontMontserratSemiBold;
+    justify-content: flex-end;
 }
 .main-menus {
     padding: 25px 0;
@@ -247,6 +262,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
     margin: 0 auto;
     color: var(--paracolor);
     font-size: 14px;
+    font-family: fontMontserratRegular;
 }
 .serviceimgbook img{
     width: 100%;
@@ -264,11 +280,14 @@ h1,h2,h3,h4,h5,h6,p,ul{
 .serviceprompt h1 {
     font-size: 18px;
     padding-top: 12px;
+    font-family: fontMontserrat;
     padding-bottom: 12px;
 }
 .serviceprompt p {
     font-size: 12px;
     padding-bottom: 30px;
+    color:var(--paracolor);
+    font-family: fontMontserratRegular;
 }
 .serviceprompt p {
     font-size: 12px;
@@ -280,6 +299,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
     display: inline-block;
     font-size: 12px;
     color: var(--whitecolor);
+    font-family: fontMontserratSemiBold;
 }
 .themecolorbtn{
     background-color: var(--textcolor);
@@ -323,6 +343,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
     background-color: var(--textcolor);
     width: 30%;
     margin: 0 auto;
+    font-family: fontMontserratSemiBold;
 }
 .btn-showall a {
     padding: 6px 10px;
@@ -348,6 +369,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
 .leftsidebook p{
     color: var(--paracolor);
     font-size: 14px;
+    font-family: fontMontserratRegular;
 }
 .paddbot {
     padding-bottom: 30px;
@@ -358,6 +380,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
     color: var(--whitecolor);
     text-decoration: none;
     font-size: 14px;
+    font-family: fontMontserratSemiBold;
 }
 .themeBtn{
     background-color: var(--primarycolor);
@@ -402,6 +425,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
     color: var(--whitecolor);
     text-decoration: none;
     font-size: 14px;
+    font-family: fontMontserratSemiBold;
 }
 .secondleftsidebook p{
     color: var(--paracolor);
@@ -425,6 +449,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
 .secondleftsidebook p{
     color: var(--paracolor);
     font-size: 14px;
+    font-family: fontMontserratRegular;
 }
 .sellyour {
     background-color: var(--sectionbg);
@@ -434,6 +459,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
 .clickbtn a{
     padding: 7px 50px;
     display: inline-block;
+    font-family: fontMontserratSemiBold;
     text-decoration: none;
 }
 .redcolotext{
@@ -462,6 +488,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
     margin: 0 auto;
     color: var(--paracolor);
     font-size: 14px;
+    font-family: fontMontserratRegular;
 }
 .booklogos {
     display: flex;
@@ -495,6 +522,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
     border-right: none !important;
     text-transform: uppercase;
     font-size: 14px;
+    font-family: fontMontserrat;
 }
 .myborderss{
     border-right: 1px solid var(--secondarycolor) !important;
@@ -547,6 +575,7 @@ img.card-img-top {
 .mycolorbg a{
     color: var(--primarycolor) !important;
     font-weight: 600;
+    font-family: fontMontserratSemiBold;
 }
 .features {
     background: black;
@@ -568,11 +597,13 @@ img.card-img-top {
     color: var(--extracolor);
     font-size: 14px;
     padding-bottom: 23px;
+    font-family: fontMontserratRegular;
 }
 .mydiffcolor{
     border: 1px solid var(--primarycolor);
     background-color: transparent;
     color:var(--whitecolor);
+    font-family: fontMontserratSemiBold;
 }
 .mydiffcolor{
     width: 20%;
@@ -596,6 +627,7 @@ img.card-img-top {
     color: var(--secondarycolor);
     font-size: 14px;
     padding-bottom: 25px;
+    font-family: fontMontserratRegular;
 }
 .leftheadings a {
     padding: 7px 50px;
@@ -603,6 +635,8 @@ img.card-img-top {
     color: var(--whitecolor);
     text-decoration: none;
     font-size: 14px;
+    font-family: fontMontserratSemiBold;
+
 }
 .btnThemeOne{
     background-color: var(--normalcolor);
@@ -660,10 +694,12 @@ img.card-img-top {
     color: var(--paracolor);
     font-size: 14px;
     padding-bottom: 16px;
+    font-family: fontMontserratRegular;
 }
 .mainquality p {
     font-size: 14px;
     color: var(--blackcolor);
+    font-family: fontMontserratMedium;
     padding-left: 20px;
 }
 .qualitybtn{
@@ -674,6 +710,7 @@ img.card-img-top {
     display: inline-block;
     color: var(--whitecolor);
     text-decoration: none;
+    font-family: fontMontserratSemiBold;
     font-size: 14px;
 }
 .qualitybtn .simpleBtn{
@@ -1008,6 +1045,7 @@ img.card-img-top {
     cursor: pointer;
     font-size: 14px;
     font-weight: 400;
+    font-family: fontMontserratMedium;
 }
 .accordion-item-header::after {
     content: "\002B";
@@ -1203,6 +1241,7 @@ img.card-img-top {
     padding: 12px 18px;
     font-size: 14px;
     border: #EBEBEB;
+    font-family: fontMontserratMedium;
     background-color: #EBEBEB;
 }
 .rightpop h3 {
@@ -1224,6 +1263,7 @@ img.card-img-top {
 .rightpop p {
     color: var(--redColor);
     padding-top: 20px;
+    font-family: fontMontserratMedium;
 }
 .discountpopup {
     position: absolute;
@@ -1239,7 +1279,7 @@ img.card-img-top {
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: center;
-    width: 68%;
+    width: 65%;
     margin: 0 auto;
     padding: 30px 25px;
     position: relative;
@@ -1275,9 +1315,9 @@ img.card-img-top {
 .close {
     position: absolute;
     right: 20px;
-    font-size: 34px;
+    font-size: 27px;
     background: #ccc;
-    line-height: 41px;
+    line-height: 36px;
     width: 40px;
     height: 40px;
     text-align: center;
