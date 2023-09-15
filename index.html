@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -129,7 +130,7 @@
             </div>
             <div class="promotionicons">
                 <ul>
-                    <li class="rotatenow"><a href="#" class="btn-promotion">GET UP TO 50% OFF</a></li>
+                    <li class="rotatenow"><a href="#" class="btn-promotion" id="showPopupBtn">GET UP TO 50% OFF</a></li>
                     <li><a href="#" class="btncall"><i class="fas fa-phone-volume"></i></a></li>
                     <li><a href="#" class="btncomments"><i class="fa-regular fa-comments"></i></a></li>
                 </ul>
@@ -1146,6 +1147,7 @@
             <div class="onemm">
                 <div class="leftpop">
                     <img src="assets/images/popup.png">
+                    <span class="close" id="close">&times;</span>
                 </div>
                 <div class="rightpop">
                     <h3>Get Up to</h3>
@@ -1259,9 +1261,9 @@ $('a[data-toggle=tab]').each(function () {
     function updateDots() {
         dots.forEach((dot, index) => {
             if (index === currentIndex) {
-                dot.classList.add('active');
+                dot.classList.add('activeslider');
             } else {
-                dot.classList.remove('active');
+                dot.classList.remove('activeslider');
             }
         });
     }
@@ -1307,6 +1309,8 @@ accordionItemHeaders.forEach((accordionItemHeader) => {
 <script>
     // Get a reference to the popup
 const popup = document.getElementById('popup');
+const showPopupButton = document.getElementById('showPopupBtn');
+const closeButton = document.getElementById('close');
 
 // Function to show the popup
 function showPopup() {
@@ -1325,6 +1329,9 @@ window.onload = function() {
     // Automatically hide the popup after 5 seconds (5000 milliseconds)
     setTimeout(hidePopup, 1000000);
 };
+showPopupButton.addEventListener('click', showPopup);
+// Close the popup when the close button is clicked
+closeButton.addEventListener('click', hidePopup);
 </script>
 </body>
 </html>
