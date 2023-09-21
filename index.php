@@ -8,6 +8,10 @@
 
     if(isset($_POST['submit']))
     {
+        $name =     $_POST['name'];
+        $email =    $_POST['email'];
+        $phone =    $_POST['phone'];
+
         $mail = new PHPMailer(true);
 
         try {                
@@ -20,10 +24,10 @@
             $mail->Port       = 465;
 
             $mail->setFrom('contact@thebookcompany.org', 'Contact Details');
-            $mail->addAddress('rabshasiddiqui@gmail.com', 'Rabsha');
+            $mail->addAddress('rabshasiddiqui@gmail.com', 'The Book Company');
             $mail->isHTML(true);
             $mail->Subject = 'Connect With Us';
-            $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+            $mail->Body    = 'Name: '.$name.' <br> Phone Number: '.$phone.' <br> Email: '.$email;
 
             $mail->send();
             $success = true;
