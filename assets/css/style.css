@@ -158,6 +158,9 @@ h1,h2,h3,h4,h5,h6,p,ul{
 
 /*Content Start*/
 /*Content Start*/
+.alert.alert-success {
+    padding: 7px 10px;
+}
 .banner {
     background: url(../../assets/images/banner.png);
     background-repeat: no-repeat;

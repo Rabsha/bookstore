@@ -1,3 +1,38 @@
+<?php
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\SMTP;
+    use PHPMailer\PHPMailer\Exception;
+
+    //Load Composer's autoloader
+    require 'vendor/autoload.php';
+
+    if(isset($_POST['submit']))
+    {
+        $mail = new PHPMailer(true);
+
+        try {                
+            $mail->isSMTP();                                            
+            $mail->Host       = 'thebookcompany.org';                     
+            $mail->SMTPAuth   = true;                                   
+            $mail->Username   = 'contact@thebookcompany.org';                     
+            $mail->Password   = 'YA2iHPOW40pM';                               
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            
+            $mail->Port       = 465;
+
+            $mail->setFrom('contact@thebookcompany.org', 'Contact Details');
+            $mail->addAddress('rabshasiddiqui@gmail.com', 'Rabsha');
+            $mail->isHTML(true);
+            $mail->Subject = 'Connect With Us';
+            $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+
+            $mail->send();
+            $success = true;
+        } 
+        catch (Exception $e) {
+            echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        }
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -95,24 +130,33 @@
                         </div>
                         <form method="post">
                             <div class="bannerform">
+                                <?php
+                                    if(isset($success)):
+                                ?>
+                                <div class="alert alert-success">
+                                    Thankyou for Contacting Us
+                                </div>
+                                <?php
+                                    endif;
+                                ?>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="topbarform">
                                             <div class="form-group">
-                                                <input type="text" name="Name" placeholder="Name">
+                                                <input type="text" name="name" placeholder="Name">
                                             </div>
                                             <div class="form-group">
-                                                <input type="email" name="Email" placeholder="Email">
+                                                <input type="email" name="email" placeholder="Email">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="topbarform">
                                             <div class="form-group">
-                                                <input type="text" name="Phone" placeholder="Phone">
+                                                <input type="text" name="phone" placeholder="Phone">
                                             </div>
                                             <div class="form-group">
-                                                <button>SUBMIT</button>
+                                                <button type="submit" name="submit">SUBMIT</button>
                                             </div>
                                         </div>
                                     </div>
